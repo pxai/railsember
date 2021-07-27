@@ -6,8 +6,8 @@ before_install:
   - bundle lock --add-platform x86_64-linux
 
 before_script:
-  - 'rails webpacker:install'
   - 'yarn install --check-files'
   - 'bundle install'
+  - 'rails webpacker:install'
   - 'RAILS_ENV=test bundle exec rake db:create'
   - 'RAILS_ENV=test bundle exec rake db:migrate'
