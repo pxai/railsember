@@ -1,5 +1,6 @@
 # Railsember app
 **WARNING, Work in progress until Monday**
+[![Build Status](https://travis-ci.com/pxai/railsember.svg?token=arqgKqUXMMcY8kTPhsyy&branch=master)](https://travis-ci.com/pxai/railsember)
 
 ```
 rails new railsember
