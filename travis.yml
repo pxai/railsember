@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 3.0.0
+before_install:
+  - gem install -v 2.2.3 bundler
+  - bundle lock --add-platform x86_64-linux
+
+before_script:
+  - 'rails webpacker:install'
+  - 'yarn install --check-files'
+  - 'bundle install'
+  - 'RAILS_ENV=test bundle exec rake db:create'
+  - 'RAILS_ENV=test bundle exec rake db:migrate'
